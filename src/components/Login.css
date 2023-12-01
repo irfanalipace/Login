@@ -1,0 +1,143 @@
+/* LoginForm.css */
+.login-container {
+    /* width: 399px !important; */
+    max-width: 341px;
+    width: 100%;
+    padding: 46px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+  
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 9px;
+  }
+  
+  .form-group label {
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+  
+  .form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  .password-group {
+    position: relative;
+  }
+  
+.password-lable{
+    text-align: left;
+}
+  
+  .password-toggle {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+  .login-button,
+  .login-with-google {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button {
+    color: var(--text-button-primary, #005237);
+    text-align: center;
+    font-family: Sora Variable;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 460;
+    line-height: 18px;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid var(--border-button-primary, #00E687);
+    background: var(--background-button-primary, #50F89A);
+    /* background-color: #4caf50; */
+    /* color: #fff; */
+    margin-bottom: 10px;
+}
+ 
+  
+  .login-with-google {
+  
+    color: black;
+  }
+  
+ 
+  .login-logo-icon {
+    text-align: left;
+
+    color: green;
+    
+}
+.login-logo-icon h5{
+  font-size: 16px;
+    
+}
+.welcome-h1 {
+    width: 221px;
+    text-align: left;
+    font-family: Sora Variable;
+}
+.welcome-h1 h1 {
+    height: 54px;
+    padding: 0px;
+    line-height: 37px;
+    font-size: 42px;
+}
+.pragraph-dashboard p{
+    color: #3B4752;
+
+font-family: Public Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 155.556% */
+}
+
+.pragraph-dashboard {
+  text-align: left;
+}
+.login-logo-icon div{
+    font-size: 22px;
+}
+.additional-options-checkin-password{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+.additional-options-checkin-password a {
+    color: #000;
+    text-align: right;
+    font-feature-settings: 'salt' on;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+.sign-link{
+    text-align: center;
+    margin-top: 22px;
+}

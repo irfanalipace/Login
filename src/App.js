@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+const NotFound = lazy(() => import("./components/NotFound/NotFound.tsx"));
+
+const Login = lazy(() => import("./components/Login.tsx"));
+const Dashboard = lazy(() => import("./components/Dashboard.tsx"));
+const SuspenseFallback = <div>Loading...</div>;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={SuspenseFallback}>
+              <Login />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <Suspense fallback={SuspenseFallback}>
+              <Dashboard />
+            </Suspense>
+          }
+        />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
